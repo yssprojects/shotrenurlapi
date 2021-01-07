@@ -13,15 +13,6 @@
         "shirnkmeapi": {
             "description": "shirnkme.io Api Get It From Here https://shrinkme.io/member/tools/api ",
             "value": "9b8aab2630a0e5c289837488ea83536e6912dd99"
-            
-        },
-        "shrinkearn": {
-            "description": "shirnkme.io api",
-            "value": "4fc97cae14f38321754a8adcdd85d466636ced83"
-        },
-        "urlshortx": {
-            "description": "shirnkme.io api",
-            "value": "46eea424eca0aad3028a39a5ac43cbfacdb4e242"
         }
     }
 }
