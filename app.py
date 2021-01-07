@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 gplinkapi = environ.get('gplinkapi')
 shrinkme = environ.get('shirnkmeapi')
-
+ 
 @app.route("/")
 def home():
     return render_template("main.html")
