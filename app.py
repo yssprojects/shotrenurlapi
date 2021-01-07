@@ -27,10 +27,6 @@ def ids():
     data = torrent_results
     return data['shortenedUrl']
   
-@app.errorhandler(500) 
-def error():
-    return render_template("main.html")
-
 @app.errorhandler(404) 
 def error():
     return render_template("main.html")
