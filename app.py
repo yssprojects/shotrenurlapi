@@ -6,8 +6,6 @@ app = Flask(__name__)
 
 gplinkapi = environ.get('gplink')
 shrinkme = environ.get('shirnkme')
-shrinkearn = environ.get('hrinkearn')
-urlshortx = environ.get('urlshortx')
  
 @app.route("/")
 def home():
@@ -29,21 +27,9 @@ def ids():
     data = torrent_results
     return data['shortenedUrl']
   
-@app.route('/shrinkearn',methods=['GET','POST'])
-def ids():
-    w = request.args.get('url')
-    base_url = f"https://shrinkearn.com/api?api="+shrinkearn+"&url="+(w)
-    torrent_results = requests.get(url=base_url).json()
-    data = torrent_results
-    return data['shortenedUrl']
-
-@app.route('/urlshortx',methods=['GET','POST'])
-def ida():
-    w = request.args.get('url')
-    base_url = f"https://urlshortx.com/api?api="+shrinkme+"&url="+(w)
-    torrent_results = requests.get(url=base_url).json()
-    data = torrent_results
-    return data['shortenedUrl']
+@app.errorhandler(500) 
+def error():
+    return render_template("main.html")
 
 @app.errorhandler(404) 
 def error():
