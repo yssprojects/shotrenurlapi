@@ -4,8 +4,10 @@ import requests
 
 app = Flask(__name__)
 
-gplinkapi = environ.get('gplinkapi')
-shrinkme = environ.get('shirnkmeapi')
+gplinkapi = environ.get('gplink')
+shrinkme = environ.get('shirnkme')
+shrinkearn = environ.get('hrinkearn')
+urlshortx = environ.get('urlshortx')
  
 @app.route("/")
 def home():
@@ -23,6 +25,22 @@ def id():
 def ids():
     w = request.args.get('url')
     base_url = f"https://gplinks.in/api?api="+gplinkapi+"&url="+(w)
+    torrent_results = requests.get(url=base_url).json()
+    data = torrent_results
+    return data['shortenedUrl']
+  
+@app.route('/shrinkearn',methods=['GET','POST'])
+def ids():
+    w = request.args.get('url')
+    base_url = f"https://shrinkearn.com/api?api="+shrinkearn+"&url="+(w)
+    torrent_results = requests.get(url=base_url).json()
+    data = torrent_results
+    return data['shortenedUrl']
+
+@app.route('/urlshortx',methods=['GET','POST'])
+def ida():
+    w = request.args.get('url')
+    base_url = f"https://urlshortx.com/api?api="+shrinkme+"&url="+(w)
     torrent_results = requests.get(url=base_url).json()
     data = torrent_results
     return data['shortenedUrl']
