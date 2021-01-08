@@ -40,7 +40,7 @@ def idss():
     return data['shortenedUrl']
 
 @app.route('/za.gl',methods=['GET','POST'])
-def idaas():
+def zo():
     w = request.args.get('url')
     base_url = f"https://za.gl/api?api="+zagl+"&url="+(w)
     torrent_results = requests.get(url=base_url).json()
@@ -48,7 +48,7 @@ def idaas():
     return data['shortenedUrl']
   
 @app.route('/exe.io',methods=['GET','POST'])
-def isds():
+def exeio():
     w = request.args.get('url')
     base_url = f"https://exe.io/api?api="+exeio+"&url="+(w)
     torrent_results = requests.get(url=base_url).json()
@@ -56,38 +56,33 @@ def isds():
     return data['shortenedUrl']
 
 @app.route('/da.gd',methods=['GET','POST'])
-def iaads():
+def dagd():
     w = request.args.get('url')
     s = pyshorteners.Shortener() 
     shortened_url = s.dagd.short(w)
     return shortened_url
+   
 @app.route('/bit.ly',methods=['GET','POST'])
-def iaaads():
+def bit.ly():
     w = request.args.get('url')
     s = pyshorteners.Shortener() 
     shortened_url = s.bitly.short(w)
     return shortened_url
  
 @app.route('/chilp.it',methods=['GET','POST'])
-def iaqads():
+def chilipit():
     w = request.args.get('url')
     s = pyshorteners.Shortener() 
     shortened_url = s.chilpit.short(w)
     return shortened_url
 
 @app.route('/clck.ru',methods=['GET','POST'])
-def iaqds():
+def clickru():
     w = request.args.get('url')
     s = pyshorteners.Shortener() 
     shortened_url = s.clckru.short(w)
     return shortened_url
 
-@app.route('/cutt.ly',methods=['GET','POST'])
-def iazads():
-    w = request.args.get('url')
-    s = pyshorteners.Shortener() 
-    shortened_url = s.cutt.ly.short(w)
-    return shortened_url
 
 @app.route('/git.io',methods=['GET','POST'])
 def iaads():
@@ -96,15 +91,8 @@ def iaads():
     shortened_url = s.git.io.short(w)
     return shortened_url
 
-@app.route('/is.gd',methods=['GET','POST'])
-def iaadas():
-    w = request.args.get('url')
-    s = pyshorteners.Shortener() 
-    shortened_url = s.isgd.short(w)
-    return shortened_url
-
 @app.route('/nullpointer',methods=['GET','POST'])
-def iaazads():
+def nullpointer():
     w = request.args.get('url')
     s = pyshorteners.Shortener() 
     shortened_url = s.nullpointer.short(w)
