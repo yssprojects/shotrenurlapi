@@ -61,8 +61,21 @@ def dagd():
     s = pyshorteners.Shortener() 
     shortened_url = s.dagd.short(w)
     return shortened_url
-   
-
+   '''
+@app.route('/bit.ly',methods=['GET','POST'])
+def bit.ly():
+    w = request.args.get('url')
+    s = pyshorteners.Shortener(api_key='YOUR_KEY') 
+    shortened_url = s.bitly.short(w)
+    return shortened_url
+    '''
+@app.route('/nullpointer',methods=['GET','POST'])
+def nullpointer():
+    w = request.args.get('url')
+    s = pyshorteners.Shortener() 
+    shortened_url = s.nullpointer.short(w)
+    return shortened_url
+ 
 
 
 @app.errorhandler(404) 
