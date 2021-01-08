@@ -1,18 +1,19 @@
+from os import environ
 from flask import Flask, render_template, request
 import requests
 import pyshorteners
 
 app = Flask(__name__)
 
-gplinkapi = "714d94cc0bee820944c8007db0f684d40e29fe27"
-shrinkme = "9b8aab2630a0e5c289837488ea83536e6912dd99"
-shrinkearn = "4fc97cae14f38321754a8adcdd85d466636ced83"
-zagl = "db128276207f992dc588eb8dece54de4cde2c663"
-exeio = "35ea7ecf4e3d29cbfee7ddbc9701f58e95602452"
+gplinkapi = environ.get(gplinkapi)
+shrinkme = environ.get(shirnkmeapi)
+shrinkearn = environ.get(shrinkearn)
+zagl = environ.get(zagl)
+exeio = environ.get(exeio)
  
 @app.route("/")
 def home():
-    return "hi"
+    return render_template("main.html")
 
 @app.route('/shrinkme',methods=['GET','POST'])
 def id():
@@ -66,4 +67,4 @@ def error():
     return "error"
 
 if __name__ == "__main__":
-    app.run()
+     app.run(host="0.0.0.0",port= 5000)
