@@ -61,6 +61,103 @@ def iaads():
     s = pyshorteners.Shortener() 
     shortened_url = s.dagd.short(w)
     return shortened_url
+@app.route('/bit.ly',methods=['GET','POST'])
+def iaaads():
+    w = request.args.get('url')
+    s = pyshorteners.Shortener() 
+    shortened_url = s.bitly.short(w)
+    return shortened_url
+ 
+@app.route('/chilp.it',methods=['GET','POST'])
+def iaqads():
+    w = request.args.get('url')
+    s = pyshorteners.Shortener() 
+    shortened_url = s.chilpit.short(w)
+    return shortened_url
+
+@app.route('/clck.ru',methods=['GET','POST'])
+def iaqds():
+    w = request.args.get('url')
+    s = pyshorteners.Shortener() 
+    shortened_url = s.clckru.short(w)
+    return shortened_url
+
+@app.route('/cutt.ly',methods=['GET','POST'])
+def iazads():
+    w = request.args.get('url')
+    s = pyshorteners.Shortener() 
+    shortened_url = s.cutt.ly.short(w)
+    return shortened_url
+
+@app.route('/git.io',methods=['GET','POST'])
+def iaads():
+    w = request.args.get('url')
+    s = pyshorteners.Shortener() 
+    shortened_url = s.git.io.short(w)
+    return shortened_url
+
+@app.route('/is.gd',methods=['GET','POST'])
+def iaadas():
+    w = request.args.get('url')
+    s = pyshorteners.Shortener() 
+    shortened_url = s.isgd.short(w)
+    return shortened_url
+
+@app.route('/nullpointer',methods=['GET','POST'])
+def iaazads():
+    w = request.args.get('url')
+    s = pyshorteners.Shortener() 
+    shortened_url = s.nullpointer.short(w)
+    return shortened_url
+
+@app.route('/os.db',methods=['GET','POST'])
+def osdb():
+    w = request.args.get('url')
+    s = pyshorteners.Shortener() 
+    shortened_url = s.osdb.short(w)
+    return shortened_url
+
+@app.route('/ow.ly',methods=['GET','POST'])
+def owly():
+    w = request.args.get('url')
+    s = pyshorteners.Shortener() 
+    shortened_url = s.owly.short(w)
+    return shortened_url
+
+@app.route('/po.st',methods=['GET','POST'])
+def post():
+    w = request.args.get('url')
+    s = pyshorteners.Shortener() 
+    shortened_url = s.post.short(w)
+    return shortened_url
+
+@app.route('/qps.ru',methods=['GET','POST'])
+def qpsru():
+    w = request.args.get('url')
+    s = pyshorteners.Shortener() 
+    shortened_url = s.qpsru.short(w)
+    return shortened_url
+
+@app.route('/short.cm',methods=['GET','POST'])
+def shortcm():
+    w = request.args.get('url')
+    s = pyshorteners.Shortener() 
+    shortened_url = s.shortcm.short(w)
+    return shortened_url
+
+@app.route('/tiny.cc',methods=['GET','POST'])
+def tinycc():
+    w = request.args.get('url')
+    s = pyshorteners.Shortener() 
+    shortened_url = s.tinycc.short(w)
+    return shortened_url
+
+@app.route('/tinyurl.com',methods=['GET','POST'])
+def tinyurl():
+    w = request.args.get('url')
+    s = pyshorteners.Shortener() 
+    shortened_url = s.tinyurl.short(w)
+    return shortened_url
 
 @app.errorhandler(404) 
 def error():
