@@ -13,6 +13,18 @@
         "shirnkmeapi": {
             "description": "shirnkme.io Api Get It From Here https://shrinkme.io/member/tools/api ",
             "value": "9b8aab2630a0e5c289837488ea83536e6912dd99"
-        }
+        },
+         "shrinkearn": {
+            "description": "shirnkearn.com Api Get It From Here https://shrinkearn.com/member/tools/api ",
+            "value": "4fc97cae14f38321754a8adcdd85d466636ced83"
+        },
+         "zagl": {
+            "description": "za.gl Api Get It From Here https://za.gl/member/tools/api ",
+            "value": "db128276207f992dc588eb8dece54de4cde2c663"
+        },
+         "exeio": {
+            "description": "exe.io Api Get It From Here https://exe.io/member/tools/api ",
+            "value": "35ea7ecf4e3d29cbfee7ddbc9701f58e95602452"
+        },
     }
 }
