@@ -62,13 +62,7 @@ def dagd():
     shortened_url = s.dagd.short(w)
     return shortened_url
    
-@app.route('/bit.ly',methods=['GET','POST'])
-def bit.ly():
-    w = request.args.get('url')
-    s = pyshorteners.Shortener() 
-    shortened_url = s.bitly.short(w)
-    return shortened_url
- 
+
 
 
 @app.errorhandler(404) 
