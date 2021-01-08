@@ -13,7 +13,7 @@ exeio = environ.get(exeio)
  
 @app.route("/")
 def home():
-    return render_template("main.html")
+    return "Api Running"
 
 @app.route('/shrinkme',methods=['GET','POST'])
 def id():
