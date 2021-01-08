@@ -5,15 +5,15 @@ import pyshorteners
 
 app = Flask(__name__)
 
-gplinkapi = environ.get(gplinkapi)
-shrinkme = environ.get(shirnkmeapi)
-shrinkearn = environ.get(shrinkearn)
-zagl = environ.get(zagl)
-exeio = environ.get(exeio)
+gplinkapi = environ.get('gplinkapi')
+shrinkme = environ.get('shirnkmeapi')
+shrinkearn = environ.get('shrinkearn')
+zagl = environ.get('zagl')
+exeio = environ.get('exeio')
  
 @app.route("/")
 def home():
-    return "Api Running"
+    return render_template("main.html")
 
 @app.route('/shrinkme',methods=['GET','POST'])
 def id():
