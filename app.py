@@ -13,7 +13,7 @@ exeio = environ.get('exeio')
  
 @app.route("/")
 def home():
-    return "api Working Created By <a href="https://github.com/yssprojects/shotrenurlapi/">Yss Projects</a>"
+    return "api Working"
 
 @app.route('/shrinkme',methods=['GET','POST'])
 def id():
