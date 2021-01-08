@@ -72,9 +72,9 @@ def bit.ly():
 @app.route('/nullpointer',methods=['GET','POST'])
 def nullpointer():
     w = request.args.get('url')
-    s = pyshorteners.Shortener() 
-    shortened_url = s.nullpointer.short(w)
-    return shortened_url
+    ss = pyshorteners.Shortener() 
+    shortended_url = ss.nullpointer.short(w)
+    return shortended_url
  
 
 
