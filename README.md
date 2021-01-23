@@ -17,13 +17,13 @@ Make short link by using [GPlink](https://gplinks.in/), [ShrinkMe](https://shrin
 * `za.gl Api`: Get if from [Za.glApi](https://za.gl/member/tools/api).
 
 ### Useage
-* `ShrinkMe Api`: https://<yourappname>.herokuapp.com/shrinkme/url=<your-url>
+* `ShrinkMe Api`: https://{yourappname}.herokuapp.com/shrinkme/url={your-url}
   
-* `Gplink Api`: https://<yourappname>.herokuapp.com/gplink/url=<your-url>
+* `Gplink Api`: https://{yourappname}.herokuapp.com/gplink/url={your-url}
 
-* `ShrinkEarn Api`: https://<yourappname>.herokuapp.com/shrinkearn/url=<your-url>
+* `ShrinkEarn Api`: https://{yourappname}.herokuapp.com/shrinkearn/url={your-url}
 
-* `Za.gl Api`: https://<yourappname>.herokuapp.com/za.gl/url=<your-url>
+* `Za.gl Api`: https://{yourappname}.herokuapp.com/za.gl/url={your-url}
   
-* `da.gd Api`: https://<yourappname>.herokuapp.com/da.gd/url=<your-url>
+* `da.gd Api`: https://{yourappname}.herokuapp.com/da.gd/url={your-url}
 ### More Websites ComingSoon...
