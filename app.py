@@ -60,7 +60,7 @@ def bitly():
     
     w = request.args.get('url')
     s = pyshorteners.Shortener(api_key='2304c97d78eeb8f011bfa4fbc704461986fc8162')
-    shortened_url = s.bitly.regex(w)
+    shortened_url = s.bitly.shot(w)
     return shortened_url
 
 @app.route('/da.gd',methods=['GET','POST'])
